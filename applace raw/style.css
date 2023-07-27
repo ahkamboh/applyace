@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: .5em;
+  height: 0em;
+  background: #d0e4ff;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a6fee;
+  border-radius: 10px;
+}
+
+article {
+  display: none;
+}
+
+article.active {
+  display: block;
+  animation: fade 0.5s ease backwards;
+}
+
+.features {
+  animation: fade 0.5s ease forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.active-color {
+  color: #1f67ed;
+
+}
+
+.bg-1 {
+  background-image: url(image-bg.webp);
+  background-size: cover;
+  background-position: 55% center;
+}
+
+#bg-2 {
+  background-image: url(image-3.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+}
+
+section:first-of-type {
+  background-image: url(bg.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+}
+
+.aboutbtn {
+  background-color: transparent;
+}
+.overflow-about {
+  overflow: visible;
+}
+#fade-text span {
+  opacity: 0;
+  animation: fadeInOut 5s forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+.slick-slide {
+  margin: 0 10px;
+  cursor: grab;
+}
+@media screen and (max-width: 1024px) {
+  .overflow-about button {
+    background: #fff;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .slick-slide {
+    margin: 0 5px;
+  }
+
+}
