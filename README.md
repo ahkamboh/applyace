@@ -3,8 +3,7 @@
 ![Repository Logo](https://ahkamboh.github.io/applyace/assets/applayce%20logo.png)
 
 ## Description
-
-ApplyAce is a powerful application that enhances productivity and simplifies various tasks. This repository contains the source code and documentation for ApplyAce.
+Applyace your ultimate admission companion, Say goodbye to complex processes and paperwork. Effortlessly apply to your dream universities. Boost your chances, and secure admission with ease.
 
 ## Table of Contents
 
