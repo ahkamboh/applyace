@@ -24,10 +24,10 @@ const aboutbtn = document.querySelector('.full-btn');
 h_btn.addEventListener('click', function () {
   if (h_btn.classList.contains('h-full')) {
     h_btn.classList.remove('h-full');
-    h_btn.classList.add('h-[70.8vh]');
+    h_btn.classList.add('h-[42.79rem]');
   } else {
     h_btn.classList.add('h-full');
-    h_btn.classList.remove('h-[70.8vh]');
+    h_btn.classList.remove('h-[42.79rem]');
   }
   h_btn.classList.toggle('overflow-about');
   aboutbtn.classList.toggle('aboutbtn');
