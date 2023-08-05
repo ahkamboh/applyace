@@ -1,6 +1,6 @@
-## Check our main website ☺ just click on below "Applyace" Name
+
 # [Applyace](https://applyaces.com/) 
-![Repository Logo](https://ahkamboh.github.io/applyace/assets/applayce%20logo.png)
+![Repository Logo](https://github.com/ahkamboh/applyace/assets/123060177/b4c76455-cc11-487f-aaa1-0f6ed0335003)
 
 ## Description
 Applyace your ultimate admission companion, Say goodbye to complex processes and paperwork. Effortlessly apply to your dream universities. Boost your chances, and secure admission with ease.
