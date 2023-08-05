@@ -1320,13 +1320,13 @@ article.active {
 }
 
 .bg-1 {
-    background-image: url(/assets/image-bg-f5a87683.webp);
+    background-image: url(image-bg.webp);
     background-size: cover;
     background-position: 55% center
 }
 
 #bg-2 {
-    background-image: url(/assets/image-3-21143479.webp);
+    background-image: url(image-3.webp);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1334,7 +1334,7 @@ article.active {
 }
 
 section:first-of-type {
-    background-image: url(/assets/bg-2acf65c1.svg);
+    background-image: url(bg.svg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
