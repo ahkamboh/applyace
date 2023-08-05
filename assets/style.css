@@ -69,7 +69,9 @@ pre {
 small {
     font-size: 80%
 }
-
+.under-line{
+  text-decoration: underline 2px solid #1f67ed;
+}
 sub,
 sup {
     font-size: 75%;
