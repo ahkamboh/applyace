@@ -1,0 +1,405 @@
+<main class="p-5 ">
+    <div class="flex font-poppins  justify-start items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="48"
+            height="48" viewBox="0 0 24 24" fill="none" stroke="#1f67ed" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" class="lucide lucide-layout-dashboard">
+            <rect width="7" height="9" x="3" y="3" rx="1" />
+            <rect width="7" height="5" x="14" y="3" rx="1" />
+            <rect width="7" height="9" x="14" y="12" rx="1" />
+            <rect width="7" height="5" x="3" y="16" rx="1" />
+        </svg>
+        <h1 class=" font-semibold text-2xl">My Application Portal</h1>
+    </div>
+    <br>
+    <!-- cards-->
+    <div
+        class=" grid grid-cols-4 lg:grid-cols-2 sm:grid-cols-1 w-full h-full justify-center items-center gap-10 font-poppins  ">
+        <!-- card-1-->
+        <div
+            class="w-full h-40  rounded-md overflow-hidden  before:block before:bg-[#1f67ed] before:w-full before:h-3  flex flex-col gap-3 justify-center items-center  bg-white  shadow-2xl text-center">
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                    stroke="#1f67ed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-mail-check">
+                    <path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    <path d="m16 19 2 2 4-4" />
+                </svg></span>
+            <h1 class="text-xl">Applied Applications</h1>
+            <p class="text-2xl pb-3">3</p>
+        </div>
+        <!-- card-2-->
+        <div
+            class="w-full h-40  rounded-md overflow-hidden before:block before:bg-[#1f67ed] before:w-full before:h-3  flex flex-col gap-3 justify-center items-center  bg-white  shadow-2xl text-center">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                    stroke="#1f67ed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-mail-x">
+                    <path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h9" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    <path d="m17 17 4 4" />
+                    <path d="m21 17-4 4" />
+                </svg></span>
+            <h1 class="text-xl">Rejected Applications</h1>
+            <p class="text-2xl pb-3">3</p>
+        </div>
+        <!-- card-3-->
+        <div
+            class="w-full h-40  rounded-md overflow-hidden before:block before:bg-[#1f67ed] before:w-full before:h-3  flex flex-col gap-3 justify-center items-center  bg-white  shadow-2xl text-center">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                    stroke="#1f67ed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-badge-check">
+                    <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                    <path d="m9 12 2 2 4-4" />
+                </svg></span>
+            <h1 class="text-xl">Paid Applications</h1>
+            <p class="text-2xl pb-3">3</p>
+        </div>
+        <!-- card-4-->
+        <div
+            class="w-full h-40  rounded-md overflow-hidden before:block before:bg-[#1f67ed] before:w-full before:h-3  flex flex-col gap-3 justify-center items-center  bg-white  shadow-2xl text-center">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                    stroke="#1f67ed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-badge-x">
+                    <path
+                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                    <line x1="15" x2="9" y1="9" y2="15" />
+                    <line x1="9" x2="15" y1="9" y2="15" />
+                </svg></span>
+            <h1 class="text-xl">Unpaid Applications</h1>
+            <p class="text-2xl pb-3">3</p>
+        </div>
+    </div>
+    <br>
+    <br>
+
+
+   <!-- Application status table  -->
+    <section data-controller="dasborad">
+
+        <header class=" flex h-14 w-full items-center ">
+            <ul
+                class="flex font-poppins text-gray-800 bg-white   font-semibold px-7 border shadow-sm rounded-md gap-10   text-base justify-center items-center h-[60px] ">
+                <li><button class="active-color" data-target="dasborad.link" data-nav-link>Unpaid</button></li>
+                <li><button data-target="dasborad.link" data-nav-link>Paid</button></li>
+            </ul>
+        </header>
+        <br>
+        <!-- unpaid section -->
+        <div id="unpaid-section" class=" active w-full h-full" data-page="unpaid" data-target="dasborad.page">
+            <h1 class="flex gap-2 text-2xl justify-start font-semibold text-gray-800 text-center items-center ">
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                        stroke="#1f67ed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-user-x">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <line x1="17" x2="22" y1="8" y2="13" />
+                        <line x1="22" x2="17" y1="8" y2="13" />
+                    </svg></span> Unpaid</h1>
+            <br>
+            <div
+                class="  w-full h-full font-poppins  xl:overflow-x-scroll rounded-md overflow-hidden  bg-white shadow-2xl border ">
+
+                <!-- Application status table head  -->
+                <div
+                    class=" px-10 flex text-white justify-around items-center gap-20 uppercase p-2   w-full h-fit bg-[#1f67ed]  xl:w-[80rem] ">
+                    <div class=" flex gap-20 relative right-5 ">
+                        <h1>Application no</h1>
+                        <h1 class="relative left-4"> Application name </h1>
+                    </div>
+                    <div class="flex gap-20 relative left-1">
+                        <h1 class="relative right-4">Status </h1>
+                        <h1 class="relative left-[38px]"> Payment method</h1>
+                    </div>
+                    <div class="relative left-1">
+                        <h1>Manage</h1>
+                    </div>
+                </div>
+                <!-- Application status 1  -->
+                <div class=" p-5 flex  justify-around items-center gap-20 uppercase   w-full h-fit  xl:w-[80rem] ">
+                    <div class="  flex gap-20 relative left-8 ">
+                        <h1 class="w-32 text-center h-fit ">2307307</h1>
+                        <h1 class=" relative  text-sm w-48 text-center">Uet-Comsat-lums-Ucp</h1>
+                    </div>
+                    <div class="flex gap-20 relative left-2">
+                        <h1
+                            class=" w-44  font-medium p-1 text-center text-sm h-fit  bg-[#99bdeb] text-white  rounded-md">
+                            Under Process
+                        </h1>
+                        <h1
+                            class="w-16 text-center font-medium  p-1 text-sm h-fit  text-white bg-[#ba1212]  rounded-md">
+                            unpaid</h1>
+                    </div>
+                    <div class=" flex gap-2 flex-col">
+                        <a href="#_"
+                            class="inline-flex items-center justify-center  px-4 py-0.5 text-xs font-medium leading-6 text-white whitespace-no-wrap bg-[#1f67ed] border  rounded-md shadow-sm hover:bg-[#2d73f5] ">Payment
+                            method</a>
+
+                        <button
+                            class="inline-flex items-center justify-center  px-4 py-0.5 text-xs font-medium leading-6 text-white whitespace-no-wrap bg-[#1f67ed] border  rounded-md shadow-sm hover:bg-[#ba1212] uppercase ">Delete
+                            Application</button>
+                    </div>
+                </div>
+                <hr>
+                <!-- Application status 2-->
+                <div class=" p-5 flex  justify-around items-center gap-20 uppercase   w-full h-fit  xl:w-[80rem] ">
+                    <div class="  flex gap-20 relative left-8 ">
+                        <h1 class="w-32 text-center h-fit ">2307307</h1>
+                        <h1 class=" relative  text-sm w-48 text-center">Uet-Comsat-lums-Ucp</h1>
+                    </div>
+                    <div class="flex gap-20 relative left-2">
+                        <h1
+                            class=" w-44  font-medium p-1 text-center text-sm h-fit  bg-[#99bdeb] text-white  rounded-md">
+                            Under Process
+                        </h1>
+                        <h1
+                            class="w-16 text-center font-medium  p-1 text-sm h-fit text-white  bg-[#ba1212]  rounded-md">
+                            unpaid</h1>
+                    </div>
+                    <div class=" flex gap-2 flex-col">
+                        <a href="#_"
+                            class="inline-flex items-center justify-center  px-4 py-0.5 text-xs font-medium leading-6 text-white whitespace-no-wrap bg-[#1f67ed] border  rounded-md shadow-sm hover:bg-[#2d73f5] ">Payment
+                            method</a>
+
+                        <button
+                            class="inline-flex justify-center items-center  px-4 py-0.5 text-xs font-medium leading-6 text-white whitespace-no-wrap bg-[#1f67ed] border  rounded-md shadow-sm hover:bg-[#ba1212] uppercase ">
+                            Delete
+                            Application</button>
+                    </div>
+                </div>
+                <hr>
+                <!-- Application status 3 -->
+                <div class=" p-5 flex  justify-around items-center gap-20 uppercase   w-full h-fit  xl:w-[80rem] ">
+                    <div class="  flex gap-20 relative left-8 ">
+                        <h1 class="w-32 text-center h-fit ">2307307</h1>
+                        <h1 class=" relative  text-sm w-48 text-center">Uet-Comsat-lums-Ucp</h1>
+                    </div>
+                    <div class="flex gap-20 relative left-2">
+                        <h1
+                            class=" w-44  font-medium p-1 text-center text-sm h-fit  bg-[#99bdeb] text-white  rounded-md">
+                            Under Process
+                        </h1>
+                        <h1
+                            class="w-16 text-center font-medium  p-1 text-sm h-fit text-white  bg-[#ba1212]  rounded-md">
+                            unpaid</h1>
+                    </div>
+                    <div class=" flex gap-2 flex-col">
+                        <a href="#_"
+                            class="inline-flex items-center justify-center  px-4 py-0.5 text-xs font-medium leading-6 text-white whitespace-no-wrap bg-[#1f67ed] border  rounded-md shadow-sm hover:bg-[#2d73f5] ">Payment
+                            method</a>
+
+                        <button
+                            class="inline-flex items-center justify-center  px-4 py-0.5 text-xs font-medium leading-6 text-white whitespace-no-wrap bg-[#1f67ed] border  rounded-md shadow-sm hover:bg-[#ba1212] uppercase ">Delete
+                            Application</button>
+                    </div>
+                </div>
+                <hr>
+                <!-- Application status 4 -->
+                <div class=" p-5 flex  justify-around items-center gap-20 uppercase   w-full h-fit  xl:w-[80rem] ">
+                    <div class="  flex gap-20 relative left-8 ">
+                        <h1 class="w-32 text-center h-fit ">2307307</h1>
+                        <h1 class=" relative  text-sm w-48 text-center">Uet-Comsat-lums-Ucp</h1>
+                    </div>
+                    <div class="flex gap-20 relative left-2">
+                        <h1
+                            class=" w-44  font-medium p-1 text-center text-sm h-fit  bg-[#99bdeb] text-white  rounded-md">
+                            Under Process
+                        </h1>
+                        <h1
+                            class="w-16 text-center font-medium  p-1 text-sm h-fit text-white  bg-[#ba1212]  rounded-md">
+                            unpaid</h1>
+                    </div>
+                    <div class=" flex gap-2 flex-col">
+                        <a href="#_"
+                            class="inline-flex items-center justify-center  px-4 py-0.5 text-xs font-medium leading-6 text-white whitespace-no-wrap bg-[#1f67ed] border  rounded-md shadow-sm hover:bg-[#2d73f5] ">Payment
+                            method</a>
+
+                        <button
+                            class="inline-flex items-center justify-center  px-4 py-0.5 text-xs font-medium leading-6 text-white whitespace-no-wrap bg-[#1f67ed] border  rounded-md shadow-sm hover:bg-[#ba1212] uppercase ">Delete
+                            Application</button>
+                    </div>
+                </div>
+                <hr>
+                <!-- Application status 5  -->
+                <div class=" p-5 flex  justify-around items-center gap-20 uppercase   w-full h-fit  xl:w-[80rem] ">
+                    <div class="  flex gap-20 relative left-8 ">
+                        <h1 class="w-32 text-center h-fit ">2307307</h1>
+                        <h1 class=" relative  text-sm w-48 text-center">Uet-Comsat-lums-Ucp</h1>
+                    </div>
+                    <div class="flex gap-20 relative left-2">
+                        <h1
+                            class=" w-44  font-medium p-1 text-center text-sm h-fit  bg-[#99bdeb] text-white  rounded-md">
+                            Under Process
+                        </h1>
+                        <h1 class="w-16 text-center font-medium  p-1 text-sm h-fit text-white bg-[#ba1212]  rounded-md">
+                            unpaid</h1>
+                    </div>
+                    <div class=" flex gap-2 flex-col">
+                        <a href="#_"
+                            class="inline-flex items-center justify-center  px-4 py-0.5 text-xs font-medium leading-6 text-white whitespace-no-wrap bg-[#1f67ed] border  rounded-md shadow-sm hover:bg-[#2d73f5] ">Payment
+                            method</a>
+
+                        <button
+                            class="inline-flex items-center justify-center  px-4 py-0.5 text-xs font-medium leading-6 text-white whitespace-no-wrap bg-[#1f67ed] border  rounded-md shadow-sm hover:bg-[#ba1212] uppercase ">Delete
+                            Application</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paid section -->
+        <div id="paid-section" class="w-full h-full" data-page="paid" data-target="dasborad.page">
+            <h1 class="flex gap-2 text-2xl justify-start font-semibold text-gray-800 text-center items-center ">
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                        stroke="#1f67ed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-user-check">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <polyline points="16 11 18 13 22 9" />
+                    </svg></span> Paid</h1>
+            <br>
+            <div
+                class="w-full h-full font-poppins  xl:overflow-x-scroll rounded-md overflow-hidden  bg-white shadow-2xl border ">
+                <!-- Application status table head  -->
+                <div
+                    class=" px-10 flex text-white justify-around items-center gap-20 uppercase p-2   w-full h-fit bg-[#1f67ed]  xl:w-[80rem] ">
+                    <div class=" flex gap-20 relative right-5 ">
+                        <h1>Application no</h1>
+                        <h1 class="relative left-4"> Application name </h1>
+                    </div>
+                    <div class="flex gap-20 relative  left-1 ">
+                        <h1 class="relative right-4">Status </h1>
+                        <h1 class="relative left-[38px]"> Payment method</h1>
+                    </div>
+                    <div class="relative left-1">
+                        <h1>Manage</h1>
+                    </div>
+                </div>
+                <!-- Application status 1  -->
+                <div class=" p-5 flex  justify-around items-center gap-20 uppercase   w-full h-fit  xl:w-[80rem] ">
+                    <div class="  flex gap-20 relative left-8 ">
+                        <h1 class="w-32 text-center h-fit ">2307307</h1>
+                        <h1 class=" relative  text-sm w-48 text-center">Nust-Comsat-lums</h1>
+                    </div>
+                    <div class="flex gap-20 relative left-2">
+                        <h1
+                            class=" w-44  font-medium p-1 text-center text-sm h-fit  text-white bg-[#59be5b] rounded-md">
+                            Completed </h1>
+                        <h1
+                            class="w-16 text-center font-medium  p-1 text-sm h-fit text-white  bg-[#59be5b]  rounded-md">
+                            Paid</h1>
+                    </div>
+                    <div class=" flex gap-2 flex-col">
+                        <a href="#_"
+                            class="inline-flex items-center justify-center  px-4 py-0.5 text-xs font-medium leading-6 text-white whitespace-no-wrap bg-[#1f67ed] border  rounded-md shadow-sm hover:bg-[#2d73f5] ">Payment
+                            method</a>
+
+                        <button
+                            class="inline-flex items-center justify-center  px-4 py-0.5 text-xs font-medium leading-6 text-white whitespace-no-wrap bg-[#1f67ed] border  rounded-md shadow-sm hover:bg-[#ba1212] uppercase ">Delete
+                            Application</button>
+                    </div>
+                </div>
+                <hr>
+                <!-- Application status 2-->
+                <div class=" p-5 flex  justify-around items-center gap-20 uppercase   w-full h-fit  xl:w-[80rem] ">
+                    <div class="  flex gap-20 relative left-8 ">
+                        <h1 class="w-32 text-center h-fit ">2307307</h1>
+                        <h1 class=" relative  text-sm w-48 text-center">Nust-Comsat-lums</h1>
+                    </div>
+                    <div class="flex gap-20 relative left-2">
+                        <h1
+                            class=" w-44  font-medium p-1 text-center text-sm h-fit  text-white bg-[#59be5b] rounded-md">
+                            Completed </h1>
+                        <h1
+                            class="w-16 text-center font-medium  p-1 text-sm h-fit text-white  bg-[#59be5b]  rounded-md">
+                            Paid</h1>
+                    </div>
+                    <div class=" flex gap-2 flex-col">
+                        <a href="#_"
+                            class="inline-flex items-center justify-center  px-4 py-0.5 text-xs font-medium leading-6 text-white whitespace-no-wrap bg-[#1f67ed] border  rounded-md shadow-sm hover:bg-[#2d73f5] ">Payment
+                            method</a>
+
+                        <button
+                            class="inline-flex items-center justify-center  px-4 py-0.5 text-xs font-medium leading-6 text-white whitespace-no-wrap bg-[#1f67ed] border  rounded-md shadow-sm hover:bg-[#ba1212] uppercase ">Delete
+                            Application</button>
+                    </div>
+                </div>
+                <hr>
+                <!-- Application status 3 -->
+                <div class=" p-5 flex  justify-around items-center gap-20 uppercase   w-full h-fit  xl:w-[80rem] ">
+                    <div class="  flex gap-20 relative left-8 ">
+                        <h1 class="w-32 text-center h-fit ">2307307</h1>
+                        <h1 class=" relative  text-sm w-48 text-center">Nust-Fast-lums</h1>
+                    </div>
+                    <div class="flex gap-20 relative left-2">
+                        <h1
+                            class=" w-44  font-medium p-1 text-center text-sm h-fit  bg-[#99bdeb] text-white  rounded-md">
+                            Under Process
+                        </h1>
+                        <h1
+                            class="w-16 text-center font-medium  p-1 text-sm h-fit text-white   bg-[#59be5b]  rounded-md">
+                            Paid</h1>
+                    </div>
+                    <div class=" flex gap-2 flex-col">
+                        <a href="#_"
+                            class="inline-flex items-center justify-center  px-4 py-0.5 text-xs font-medium leading-6 text-white whitespace-no-wrap bg-[#1f67ed] border  rounded-md shadow-sm hover:bg-[#2d73f5] ">Payment
+                            method</a>
+
+                        <button
+                            class="inline-flex items-center justify-center  px-4 py-0.5 text-xs font-medium leading-6 text-white whitespace-no-wrap bg-[#1f67ed] border  rounded-md shadow-sm hover:bg-[#ba1212] uppercase ">Delete
+                            Application</button>
+                    </div>
+                </div>
+                <hr>
+                <!-- Application status 4 -->
+                <div class=" p-5 flex  justify-around items-center gap-20 uppercase   w-full h-fit  xl:w-[80rem] ">
+                    <div class="  flex gap-20 relative left-8 ">
+                        <h1 class="w-32 text-center h-fit ">2307307</h1>
+                        <h1 class=" relative  text-sm w-48 text-center">Nust-Comsat-lums</h1>
+                    </div>
+                    <div class="flex gap-20 relative left-2">
+                        <h1
+                            class=" w-44   p-1 text-center text-sm h-fit text-white  bg-[#ba1212] font-medium rounded-md">
+                            Rejected </h1>
+                        <h1
+                            class="w-16 text-center font-medium  p-1 text-sm h-fit text-white  bg-[#59be5b]  rounded-md">
+                            Paid</h1>
+                    </div>
+                    <div class=" flex gap-2 flex-col">
+                        <a href="#_"
+                            class="inline-flex items-center justify-center  px-4 py-0.5 text-xs font-medium leading-6 text-white whitespace-no-wrap bg-[#1f67ed] border  rounded-md shadow-sm hover:bg-[#2d73f5] ">Payment
+                            method</a>
+
+                        <button
+                            class="inline-flex items-center justify-center  px-4 py-0.5 text-xs font-medium leading-6 text-white whitespace-no-wrap bg-[#1f67ed] border  rounded-md shadow-sm hover:bg-[#ba1212] uppercase ">Delete
+                            Application</button>
+                    </div>
+                </div>
+                <hr>
+                <!-- Application status 5  -->
+                <div class=" p-5 flex  justify-around items-center gap-20 uppercase   w-full h-fit  xl:w-[80rem] ">
+                    <div class="  flex gap-20 relative left-8 ">
+                        <h1 class="w-32 text-center h-fit ">2307307</h1>
+                        <h1 class=" relative  text-sm w-48 text-center">Nust-Comsat-lums</h1>
+                    </div>
+                    <div class="flex gap-20 relative left-2">
+                        <h1
+                            class=" w-44   p-1 text-center text-sm h-fit text-white  bg-[#ba1212] font-medium rounded-md">
+                            Rejected </h1>
+                        <h1
+                            class="w-16 text-center font-medium  p-1 text-sm h-fit  bg-[#59be5b] text-white  rounded-md">
+                            Paid</h1>
+                    </div>
+                    <div class=" flex gap-2 flex-col">
+                        <a href="#_"
+                            class="inline-flex items-center justify-center  px-4 py-0.5 text-xs font-medium leading-6 text-white whitespace-no-wrap bg-[#1f67ed] border  rounded-md shadow-sm hover:bg-[#2d73f5] ">Payment
+                            method</a>
+
+                        <button
+                            class="inline-flex items-center justify-center  px-4 py-0.5 text-xs font-medium leading-6 text-white whitespace-no-wrap bg-[#1f67ed] border  rounded-md shadow-sm hover:bg-[#ba1212] uppercase ">Delete
+                            Application</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
