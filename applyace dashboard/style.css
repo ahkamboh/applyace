@@ -7,7 +7,7 @@
     scroll-behavior: smooth;
   }
   ::-webkit-scrollbar {
-    width: .5em;
+    width: .3em;
     height: 0em;
     background: #ffffff;
   
