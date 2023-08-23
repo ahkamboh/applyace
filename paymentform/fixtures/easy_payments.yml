@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  easy_name: MyString
+  easy_number: MyString
+
+two:
+  easy_name: MyString
+  easy_number: MyString

@@ -1,0 +1,86 @@
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: .3em;
+  height: 0em;
+  background: #ffffff;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a6fee;
+  border-radius: 10px;
+}
+
+.invalid {
+  border-color: red;
+}
+
+.nav-btn-color{
+   width: 100%;
+  color: #2a6fee;
+}
+
+.nav-btn-color .checkmark {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #2a6fee;
+  scale: .7;
+  
+
+
+}
+
+.nav-btn-color .checkmark::before,
+.nav-btn-color .checkmark::after {
+
+  content: "";
+  position: absolute;
+  background-color: white;
+  
+}
+
+.nav-btn-color .checkmark::before {
+
+  height: 3px;
+  width: 15px;
+  top: calc(50% - 2px);
+  left: calc(50% - 5px);
+  transform: rotate(135deg);
+}
+
+.nav-btn-color .checkmark::after {
+  height: 3px;
+  width: 8px;
+  top: calc(50% - 1px);
+  left: calc(50% - 9px );
+  transform: rotate(45deg);
+}
+.parsley-errors-list {
+  color: red; 
+}
+
+.loadingfade{
+  animation: loadingfade 3s ease 2s 1 normal forwards;
+}
+@keyframes loadingfade {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+    z-index: -2;
+	}
+}

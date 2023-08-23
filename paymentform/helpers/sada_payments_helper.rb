@@ -1,0 +1,2 @@
+module SadaPaymentsHelper
+end

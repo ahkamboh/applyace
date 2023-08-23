@@ -1,0 +1,2 @@
+module JazzPaymentsHelper
+end
