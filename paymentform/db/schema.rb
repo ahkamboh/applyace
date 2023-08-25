@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_22_102240) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_25_170705) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -21,6 +21,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_22_102240) do
     t.string "cvv"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "payment_method"
   end
 
   create_table "easy_payments", force: :cascade do |t|
@@ -28,6 +29,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_22_102240) do
     t.string "easy_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "payment_method"
   end
 
   create_table "jazz_payments", force: :cascade do |t|
@@ -35,15 +37,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_22_102240) do
     t.string "jazz_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "payment_method"
   end
-
 
   create_table "sada_payments", force: :cascade do |t|
     t.string "sada_name"
     t.string "sada_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "payment_method"
   end
-
 
 end
